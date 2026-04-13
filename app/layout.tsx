@@ -70,7 +70,7 @@ export default function RootLayout({
 
         <Navbar />
 
-        <main className="relative z-10">{children}</main>
+        <main className="relative z-10 pt-[72px]">{children}</main>
       </body>
     </html>
   );
