@@ -25,6 +25,23 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMobileOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [mobileOpen]);
+
   return (
     <>
       <header
@@ -126,12 +143,14 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         <div
-          className={`ff-nav-mobile overflow-hidden transition-all duration-200 ease-in-out ${
-            mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+          className={`ff-nav-mobile fixed inset-x-0 top-[72px] bottom-0 z-40 transition-all duration-200 ease-out ${
+            mobileOpen
+              ? "opacity-100 translate-y-0 pointer-events-auto"
+              : "opacity-0 -translate-y-2 pointer-events-none"
           }`}
         >
-          <div className="bg-[#0B0F17]/96 backdrop-blur-xl border-t border-white/[0.08] px-6 pt-4 pb-6">
-            <nav className="flex flex-col gap-1.5 mb-5">
+          <div className="h-full bg-[#0B0F17]/96 backdrop-blur-xl border-t border-white/[0.08] px-6 pt-6 pb-8 overflow-y-auto">
+            <nav className="flex flex-col gap-1.5 mb-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
