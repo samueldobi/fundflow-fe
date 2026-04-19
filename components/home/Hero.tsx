@@ -27,7 +27,7 @@ export default function HeroSection() {
               Fund the future, on-chain.
             </h1>
             <p className="mt-5 text-[15px] sm:text-[16px] leading-relaxed text-white/70">
-              A modern crowdfunding experience for founders and communities—fast,
+              A modern crowdfunding experience for founders and communities. Fast,
               transparent, and built for Web3.
             </p>
 
