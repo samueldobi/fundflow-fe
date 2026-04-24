@@ -51,6 +51,9 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Fundflow",
   description: "On-Chain Crowdfunding Platform",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
