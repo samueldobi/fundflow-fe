@@ -44,8 +44,17 @@ body {
 
 @layer base {
   :root {
-    --font-syne: "Syne", sans-serif;
-    --font-dm-sans: "DM Sans", sans-serif;
+    --font-syne: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter,
+      Arial, sans-serif;
+    --font-dm-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter,
+      Arial, sans-serif;
+
+    --ff-bg: #020617;
+    --ff-surface: #0f172a;
+    --ff-accent: #00ffa3;
+    --ff-accent-2: #a855f7;
+    --ff-text: #ffffff;
+    --ff-muted: #94a3b8;
   }
 
   * {
@@ -58,13 +67,13 @@ body {
 
   body {
     font-family: var(--font-dm-sans);
-    background-color: #080b12;
-    color: #ffffff;
+    background-color: var(--ff-bg);
+    color: var(--ff-text);
   }
 
   ::selection {
-    background-color: #00f5a033;
-    color: #00f5a0;
+    background-color: rgba(0, 255, 163, 0.18);
+    color: var(--ff-accent);
   }
 
   /* Custom scrollbar */
@@ -72,14 +81,14 @@ body {
     width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: #080b12;
+    background: var(--ff-bg);
   }
   ::-webkit-scrollbar-thumb {
     background: #ffffff15;
     border-radius: 99px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #00f5a040;
+    background: rgba(0, 255, 163, 0.28);
   }
 }
 
@@ -95,6 +104,10 @@ body {
   }
   .font-700 {
     font-weight: 700;
+  }
+
+  .ff-muted {
+    color: var(--ff-muted);
   }
 
   /* Grain noise overlay for texture */

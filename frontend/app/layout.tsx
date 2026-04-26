@@ -32,25 +32,15 @@
 //   );
 // }
 import type { Metadata } from "next";
-import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-const syne = Syne({
-  subsets: ["latin"],
-  variable: "--font-syne",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-  weight: ["300", "400", "500", "600"],
-});
 
 export const metadata: Metadata = {
   title: "Fundflow",
   description: "On-Chain Crowdfunding Platform",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
@@ -59,13 +49,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
-      <body className="bg-[#080B12] text-white font-dm-sans antialiased min-h-screen">
+    <html lang="en">
+      <body className="bg-[color:var(--ff-bg)] text-[color:var(--ff-text)] font-dm-sans antialiased min-h-screen">
         {/* Ambient background blobs */}
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-          <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#00F5A0]/5 blur-[120px]" />
-          <div className="absolute top-1/2 -right-60 w-[500px] h-[500px] rounded-full bg-[#6C63FF]/6 blur-[140px]" />
-          <div className="absolute bottom-0 left-1/3 w-[400px] h-[400px] rounded-full bg-[#00C8FF]/4 blur-[100px]" />
+          <div className="absolute -top-44 -left-44 w-[640px] h-[640px] rounded-full bg-[color:var(--ff-accent)]/6 blur-[130px]" />
+          <div className="absolute top-1/2 -right-72 w-[560px] h-[560px] rounded-full bg-[color:var(--ff-accent-2)]/7 blur-[150px]" />
+          <div className="absolute bottom-0 left-1/3 w-[460px] h-[460px] rounded-full bg-[color:var(--ff-accent)]/4 blur-[120px]" />
         </div>
 
         <Navbar />
