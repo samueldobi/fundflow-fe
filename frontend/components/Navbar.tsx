@@ -5,12 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { label: "Ecosystem", href: "/ecosystem" },
+  { label: "Campaigns", href: "/campaigns" },
+  { label: "Create", href: "/create" },
+  { label: "Swap", href: "/swap" },
+  { label: "Badges", href: "/badges" },
+  { label: "Dashboard", href: "/dashboard" },
   { label: "Learn", href: "/learn" },
-  { label: "Build", href: "/build" },
-  { label: "Grants", href: "/grants" },
-  { label: "Events", href: "/events" },
-  { label: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {
@@ -30,8 +30,8 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/5 backdrop-blur-xl border-b border-white/[0.10] shadow-[0_10px_30px_rgba(0,0,0,0.45)]"
-            : "bg-white/5 backdrop-blur-xl border-b border-white/[0.08]"
+            ? "bg-[color:var(--ff-bg)]/80 backdrop-blur-xl border-b border-white/[0.10] shadow-[0_12px_40px_rgba(0,0,0,0.55)]"
+            : "bg-[color:var(--ff-bg)]/55 backdrop-blur-xl border-b border-white/[0.08]"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -46,7 +46,7 @@ export default function Navbar() {
 
             {/* Desktop Nav */}
             <div className="ff-nav-desktop flex-1 justify-center">
-              <nav className="flex items-center gap-1.5 px-2 py-1 rounded-full border border-white/[0.10] bg-white/[0.03]">
+              <nav className="flex items-center gap-1.5 px-2 py-1 rounded-full border border-white/[0.10] bg-white/[0.04]">
                 {navLinks.map((link) => {
                   const active =
                     pathname === link.href ||
@@ -78,10 +78,10 @@ export default function Navbar() {
             {/* Right side */}
             <div className="ff-nav-desktop items-center gap-3">
               <Link
-                href="/launch"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-dm-sans font-medium text-white border border-white/[0.12] bg-white/[0.04] hover:bg-white/[0.07] transition-colors"
+                href="/dashboard"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-[13px] font-dm-sans font-medium text-white border border-white/[0.12] bg-white/[0.05] hover:bg-white/[0.08] transition-colors"
               >
-                Launch App
+                Open App
                 <svg
                   className="w-3.5 h-3.5"
                   fill="none"
@@ -101,7 +101,7 @@ export default function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="ff-nav-mobile flex-col justify-center items-center w-10 h-10 gap-[5px] rounded-xl border border-white/[0.12] bg-white/[0.03] hover:bg-white/[0.06] transition-colors"
+              className="ff-nav-mobile flex-col justify-center items-center w-10 h-10 gap-[5px] rounded-2xl border border-white/[0.12] bg-white/[0.04] hover:bg-white/[0.07] transition-colors"
               aria-label="Toggle menu"
               aria-expanded={mobileOpen}
             >
@@ -132,7 +132,7 @@ export default function Navbar() {
               : "h-0 opacity-0 pointer-events-none"
           }`}
         >
-          <div className="h-full bg-[#0B0F17]/96 backdrop-blur-xl border-t border-white/[0.08] px-6 pt-4 pb-6 overflow-y-auto">
+          <div className="h-full bg-[color:var(--ff-surface)]/80 backdrop-blur-xl border-t border-white/[0.08] px-6 pt-4 pb-6 overflow-y-auto">
             <nav className="flex flex-col gap-1.5 mb-5">
               {navLinks.map((link) => (
                 <Link
@@ -147,11 +147,11 @@ export default function Navbar() {
               ))}
             </nav>
             <Link
-              href="/launch"
+              href="/dashboard"
               onClick={() => setMobileOpen(false)}
               className="flex items-center justify-center gap-2 w-full py-3 rounded-xl font-dm-sans font-medium text-[14px] text-[#0B0F17] bg-white hover:bg-white/90 transition-colors"
             >
-              Launch App
+              Open App
             </Link>
           </div>
         </div>
