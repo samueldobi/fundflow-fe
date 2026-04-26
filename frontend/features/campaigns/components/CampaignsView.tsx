@@ -1,6 +1,6 @@
-import CampaignFilters from "@/frontend/features/campaigns/components/CampaignFilters";
-import CampaignGrid from "@/frontend/features/campaigns/components/CampaignGrid";
-import { campaigns } from "@/frontend/features/campaigns/mock";
+import CampaignFilters from "@/features/campaigns/components/CampaignFilters";
+import CampaignGrid from "@/features/campaigns/components/CampaignGrid";
+import { campaigns } from "@/features/campaigns/mock";
 
 export default function CampaignsView() {
   return (
@@ -25,4 +25,3 @@ export default function CampaignsView() {
     </div>
   );
 }
-

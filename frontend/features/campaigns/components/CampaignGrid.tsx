@@ -1,5 +1,5 @@
-import CampaignCard from "@/frontend/features/campaigns/components/CampaignCard";
-import type { Campaign } from "@/frontend/features/campaigns/mock";
+import CampaignCard from "@/features/campaigns/components/CampaignCard";
+import type { Campaign } from "@/features/campaigns/mock";
 
 export default function CampaignGrid({ items }: { items: Campaign[] }) {
   return (
@@ -10,4 +10,3 @@ export default function CampaignGrid({ items }: { items: Campaign[] }) {
     </div>
   );
 }
-

@@ -1,7 +1,7 @@
-import { Badge } from "@/frontend/components/ui/Badge";
-import { Card } from "@/frontend/components/ui/Card";
-import { Input, Label } from "@/frontend/components/ui/Input";
-import { Select, SelectWrap } from "@/frontend/components/ui/Select";
+import { Badge } from "@/components/ui/Badge";
+import { Card } from "@/components/ui/Card";
+import { Input, Label } from "@/components/ui/Input";
+import { Select, SelectWrap } from "@/components/ui/Select";
 
 const categories = [
   "All",
@@ -62,4 +62,3 @@ export default function CampaignFilters() {
     </Card>
   );
 }
-

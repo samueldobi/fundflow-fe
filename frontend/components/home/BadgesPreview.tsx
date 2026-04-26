@@ -1,6 +1,6 @@
-import { Badge } from "@/frontend/components/ui/Badge";
-import { ButtonLink } from "@/frontend/components/ui/Button";
-import { Card, CardGlow } from "@/frontend/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
+import { ButtonLink } from "@/components/ui/Button";
+import { Card, CardGlow } from "@/components/ui/Card";
 
 const tiers = [
   { name: "Supporter", variant: "green" as const },
@@ -80,4 +80,3 @@ export default function BadgesPreview() {
     </section>
   );
 }
-

@@ -1,6 +1,6 @@
-import { ButtonLink } from "@/frontend/components/ui/Button";
-import { Card, CardGlow } from "@/frontend/components/ui/Card";
-import { Badge } from "@/frontend/components/ui/Badge";
+import { ButtonLink } from "@/components/ui/Button";
+import { Card, CardGlow } from "@/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
 
 export default function CTA() {
   return (
@@ -37,4 +37,3 @@ export default function CTA() {
     </section>
   );
 }
-

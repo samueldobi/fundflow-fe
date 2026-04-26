@@ -1,6 +1,6 @@
-import { ButtonLink } from "@/frontend/components/ui/Button";
-import CampaignGrid from "@/frontend/features/campaigns/components/CampaignGrid";
-import { campaigns } from "@/frontend/features/campaigns/mock";
+import { ButtonLink } from "@/components/ui/Button";
+import CampaignGrid from "@/features/campaigns/components/CampaignGrid";
+import { campaigns } from "@/features/campaigns/mock";
 
 export default function FeaturedCampaigns() {
   return (
@@ -28,4 +28,3 @@ export default function FeaturedCampaigns() {
     </section>
   );
 }
-

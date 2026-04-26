@@ -1,6 +1,6 @@
-import { Badge } from "@/frontend/components/ui/Badge";
-import { Card, CardGlow } from "@/frontend/components/ui/Card";
-import { ProgressBar } from "@/frontend/components/ui/ProgressBar";
+import { Badge } from "@/components/ui/Badge";
+import { Card, CardGlow } from "@/components/ui/Card";
+import { ProgressBar } from "@/components/ui/ProgressBar";
 
 const highlights = [
   {

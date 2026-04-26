@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { ButtonLink } from "@/frontend/components/ui/Button";
-import { Badge } from "@/frontend/components/ui/Badge";
+import { ButtonLink } from "@/components/ui/Button";
+import { Badge } from "@/components/ui/Badge";
 
 export default function HeroSection() {
   return (

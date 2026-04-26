@@ -1,8 +1,8 @@
-import { Badge } from "@/frontend/components/ui/Badge";
-import { Button } from "@/frontend/components/ui/Button";
-import { Card, CardGlow } from "@/frontend/components/ui/Card";
-import { Input, Label, HelperText } from "@/frontend/components/ui/Input";
-import { Select, SelectWrap } from "@/frontend/components/ui/Select";
+import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
+import { Card, CardGlow } from "@/components/ui/Card";
+import { Input, Label, HelperText } from "@/components/ui/Input";
+import { Select, SelectWrap } from "@/components/ui/Select";
 
 const tokens = ["ETH", "USDC", "USDT", "DAI", "WBTC", "ARB", "OP", "LINK"] as const;
 
@@ -88,4 +88,3 @@ export default function SwapWidget() {
     </Card>
   );
 }
-

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-import { Badge } from "@/frontend/components/ui/Badge";
-import { ButtonLink } from "@/frontend/components/ui/Button";
-import { Card, CardGlow } from "@/frontend/components/ui/Card";
-import { ProgressBar } from "@/frontend/components/ui/ProgressBar";
+import { Badge } from "@/components/ui/Badge";
+import { ButtonLink } from "@/components/ui/Button";
+import { Card, CardGlow } from "@/components/ui/Card";
+import { ProgressBar } from "@/components/ui/ProgressBar";
 
 function MiniStat({ label, value }: { label: string; value: string }) {
   return (
@@ -133,4 +133,3 @@ export default function DashboardOverview() {
     </div>
   );
 }
-

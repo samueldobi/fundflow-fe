@@ -1,5 +1,5 @@
-import { Badge } from "@/frontend/components/ui/Badge";
-import { Card, CardGlow } from "@/frontend/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
+import { Card, CardGlow } from "@/components/ui/Card";
 
 export default function LearnPage() {
   return (
@@ -40,4 +40,3 @@ export default function LearnPage() {
     </div>
   );
 }
-

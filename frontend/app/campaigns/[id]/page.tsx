@@ -1,4 +1,4 @@
-import CampaignDetail from "@/frontend/features/campaigns/components/CampaignDetail";
+import CampaignDetail from "@/features/campaigns/components/CampaignDetail";
 
 export default async function CampaignDetailPage({
   params,
@@ -8,4 +8,3 @@ export default async function CampaignDetailPage({
   const { id } = await params;
   return <CampaignDetail id={id} />;
 }
-

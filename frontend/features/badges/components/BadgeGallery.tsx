@@ -1,5 +1,5 @@
-import { Badge } from "@/frontend/components/ui/Badge";
-import { Card, CardGlow } from "@/frontend/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
+import { Card, CardGlow } from "@/components/ui/Card";
 
 const tiers = [
   { name: "Supporter", accent: "green" as const, xp: "120 XP" },
@@ -94,4 +94,3 @@ export default function BadgeGallery() {
     </section>
   );
 }
-
