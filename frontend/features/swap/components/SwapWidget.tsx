@@ -98,9 +98,9 @@ export default function SwapWidget() {
               <span className="text-white/85">Protocol fee</span>
               <span className="text-white/85">0.20%</span>
             </div>
-            {/* <div className="mt-3 rounded-2xl border border-white/[0.10] bg-white/[0.02] px-3 py-2 text-[12px] text-white/80">
+            <div className="mt-3 rounded-2xl border border-white/[0.10] bg-white/[0.02] px-3 py-2 text-[12px] text-white/80">
               {estimatedOutput}
-            </div> */}
+            </div>
             <HelperText>
               This section becomes real once wallet + DEX integration lands.
             </HelperText>
