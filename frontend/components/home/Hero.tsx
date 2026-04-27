@@ -32,12 +32,11 @@ export default function HeroSection() {
             </div>
 
             <h1 className="font-syne font-700 tracking-tight text-[44px] leading-[1.02] sm:text-[64px] lg:text-[80px]">
-              On-chain crowdfunding,
-              <span className="text-[color:var(--ff-accent)]"> done right</span>.
+              Fund with clarity. Release 
+              <span className="text-[color:var(--ff-accent)]"> with control</span>.
             </h1>
             <p className="mt-5 text-[15px] sm:text-[16px] leading-relaxed text-[color:var(--ff-muted)]">
-              Create campaigns, unlock milestone-based releases, mint NFT
-              contribution badges, and swap tokens before you contribute.
+              Support real causes. Funds are released by milestones, not all at once. If goals are not met, refunds are available.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
