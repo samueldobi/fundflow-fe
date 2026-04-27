@@ -10,8 +10,7 @@ export default function CampaignsView() {
           Campaigns
         </h1>
         <p className="mt-2 text-[15px] leading-relaxed text-[color:var(--ff-muted)]">
-          Search and filter across categories. This list is currently mocked to
-          focus on UI.
+          Search and filter across categories.
         </p>
       </div>
 

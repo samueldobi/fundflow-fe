@@ -20,8 +20,7 @@ export default function BadgesPreview() {
                 Earn NFT badges for every contribution
               </div>
               <p className="mt-3 text-[15px] leading-relaxed text-[color:var(--ff-muted)]">
-                Six tiers—from Supporter to Diamond—minted automatically as
-                on-chain SVGs (UI only for now).
+                Every contribution earns a badge. Collect tiers as you support more campaigns..
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
@@ -48,7 +47,7 @@ export default function BadgesPreview() {
                 Swap tokens before you fund
               </div>
               <p className="mt-3 text-[15px] leading-relaxed text-[color:var(--ff-muted)]">
-                Built-in quotes with fee breakdown and price impact—so backers
+                Built-in quotes with fee breakdown and price impact so backers
                 can contribute in the right asset.
               </p>
 
