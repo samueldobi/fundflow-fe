@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ConnectWalletModal from "@/components/wallet/ConnectWalletModal";
 
 const navLinks = [
   { label: "Campaigns", href: "/campaigns" },
@@ -16,6 +17,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [walletOpen, setWalletOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -77,11 +79,12 @@ export default function Navbar() {
 
             {/* Right side */}
             <div className="ff-nav-desktop items-center gap-3">
-              <Link
-                href="/dashboard"
+              <button
+                type="button"
+                onClick={() => setWalletOpen(true)}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-[13px] font-dm-sans font-medium text-white border border-white/[0.12] bg-white/[0.05] hover:bg-white/[0.08] transition-colors"
               >
-                Open App
+                Connect Wallet
                 <svg
                   className="w-3.5 h-3.5"
                   fill="none"
@@ -95,7 +98,7 @@ export default function Navbar() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </Link>
+              </button>
             </div>
 
             {/* Mobile hamburger */}
@@ -146,16 +149,23 @@ export default function Navbar() {
                 </Link>
               ))}
             </nav>
-            <Link
-              href="/dashboard"
-              onClick={() => setMobileOpen(false)}
+            <button
+              type="button"
+              onClick={() => {
+                setMobileOpen(false);
+                setWalletOpen(true);
+              }}
               className="flex items-center justify-center gap-2 w-full py-3 rounded-xl font-dm-sans font-medium text-[14px] text-[#0B0F17] bg-white hover:bg-white/90 transition-colors"
             >
-              Open App
-            </Link>
+              Connect Wallet
+            </button>
           </div>
         </div>
       </header>
+
+      {walletOpen ? (
+        <ConnectWalletModal onClose={() => setWalletOpen(false)} />
+      ) : null}
     </>
   );
 }
