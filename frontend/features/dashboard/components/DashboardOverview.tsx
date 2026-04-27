@@ -31,8 +31,7 @@ export default function DashboardOverview() {
             Dashboard
           </h1>
           <p className="mt-2 text-[15px] leading-relaxed text-[color:var(--ff-muted)]">
-            Track campaigns, contributions, and analytics (UI only—wallet logic
-            comes later).
+            Track campaigns, contributions, and analytics.
           </p>
         </div>
         <div className="flex gap-3">
