@@ -2,12 +2,45 @@ import { Badge } from "@/components/ui/Badge";
 import { Card, CardGlow } from "@/components/ui/Card";
 
 const tiers = [
-  { name: "Supporter", accent: "green" as const, xp: "120 XP" },
-  { name: "Bronze", accent: "neutral" as const, xp: "380 XP" },
-  { name: "Silver", accent: "neutral" as const, xp: "860 XP" },
-  { name: "Gold", accent: "green" as const, xp: "1,420 XP" },
-  { name: "Platinum", accent: "purple" as const, xp: "2,400 XP" },
-  { name: "Diamond", accent: "purple" as const, xp: "4,800 XP" },
+  {
+    name: "Supporter",
+    accent: "green" as const,
+    xp: "120 XP",
+    description:
+      "First step into supporting impactful campaigns on Fundflow.",
+  },
+  {
+    name: "Bronze",
+    accent: "neutral" as const,
+    xp: "380 XP",
+    description: "Early supporter helping projects gain initial momentum.",
+  },
+  {
+    name: "Silver",
+    accent: "neutral" as const,
+    xp: "860 XP",
+    description: "Consistent contributor backing campaigns over time.",
+  },
+  {
+    name: "Gold",
+    accent: "green" as const,
+    xp: "1,420 XP",
+    description:
+      "High-value contributor making a strong impact on campaign progress.",
+  },
+  {
+    name: "Platinum",
+    accent: "purple" as const,
+    xp: "2,400 XP",
+    description: "Major backer supporting campaigns at a significant level.",
+  },
+  {
+    name: "Diamond",
+    accent: "purple" as const,
+    xp: "4,800 XP",
+    description:
+      "Top supporter with exceptional contribution across campaigns.",
+  },
 ];
 
 function BadgeArt({ variant }: { variant: "green" | "purple" | "neutral" }) {
@@ -54,8 +87,8 @@ export default function BadgeGallery() {
               NFT contribution badges
             </h2>
             <p className="mt-3 text-[15px] leading-relaxed text-[color:var(--ff-muted)]">
-              Every contribution mints a badge tier—on-chain SVG art, no IPFS
-              dependency (UI only for now).
+              Every contribution mints a badge tier on-chain SVG art, no IPFS
+              dependency.
             </p>
           </div>
           <div className="flex gap-2">
@@ -82,9 +115,8 @@ export default function BadgeGallery() {
                     }
                   />
                 </div>
-                <div className="mt-4 text-[13px] text-[color:var(--ff-muted)]">
-                  Earned by supporting campaigns. Show off your progress in your
-                  public collection.
+                <div className="mt-4 text-[13px] leading-relaxed text-[color:var(--ff-muted)]">
+                  {tier.description}
                 </div>
               </div>
             </Card>

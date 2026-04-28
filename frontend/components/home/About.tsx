@@ -6,36 +6,36 @@ const highlights = [
   {
     title: "Milestone releases",
     description:
-      "Funds unlock in stages—backers get accountability, creators get momentum.",
+      "Funds unlock in stages. Backers get accountability, creators get momentum.",
     badge: { label: "In Progress", variant: "green" as const },
   },
   {
     title: "Refund protection",
     description:
-      "If a campaign fails, contributors can claim refunds based on the rules.",
+      "If a campaign doesn’t reach its goal, contributors can request refunds.",
     badge: { label: "Built-in", variant: "neutral" as const },
   },
   {
-    title: "NFT contribution badges",
+    title: "Multi-Chain Access",
     description:
-      "Supporter → Diamond tiers, minted automatically for every contribution.",
+      "Use Ethereum, Arbitrum, Base, Optimism, or Polygon.",
     badge: { label: "On-chain SVG", variant: "purple" as const },
   },
   {
-    title: "Swap before you fund",
+    title: "Simple Contributions",
     description:
-      "Built-in quotes with price impact and fee breakdown for multiple tokens.",
+      "Swap tokens in-app before contributing. See fees and price impact upfront.",
     badge: { label: "DEX", variant: "neutral" as const },
   },
   {
-    title: "Multi-chain by design",
-    description: "Deploy on Arbitrum, Base, Optimism, Polygon, and Ethereum.",
+    title: "Verified Endorsements",
+    description: "Campaigns can include trusted endorsements to build credibility.",
     badge: { label: "Web3", variant: "purple" as const },
   },
   {
     title: "Real-time analytics",
     description:
-      "Track contributions, categories, and growth signals—live and readable.",
+      "Track contributions, categories, and growth signals live and readable.",
     badge: { label: "Dashboard", variant: "neutral" as const },
   },
 ];
@@ -55,12 +55,10 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="max-w-2xl">
           <h2 className="font-syne font-700 tracking-tight text-[28px] sm:text-[36px]">
-            A bento-style platform for creators and communities
+            The Ultimate Ecosystem for Transparent Crowdfunding
           </h2>
           <p className="mt-3 text-[15px] leading-relaxed text-[color:var(--ff-muted)]">
-            Everything you need to run transparent crowdfunding: milestones,
-            protection, badges, swaps, and analytics—wrapped in a clean,
-            developer-friendly UI.
+            Everything you need to launch and scale: track milestones, manage swaps, and visualize growth with our secure, developer-first platform.
           </p>
         </div>
 

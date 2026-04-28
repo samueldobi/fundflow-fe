@@ -22,8 +22,7 @@ export default function CreateCampaignForm() {
             Create a campaign
           </h1>
           <p className="mt-2 text-[15px] leading-relaxed text-[color:var(--ff-muted)]">
-            UI-only form. Wallet connection, validations, and on-chain writes come
-            later.
+            Set your goals, define your milestones, and start raising funds on the blockchain.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">

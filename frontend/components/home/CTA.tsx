@@ -19,7 +19,7 @@ export default function CTA() {
                 Launch your next campaign with milestone accountability
               </h3>
               <p className="mt-3 text-[15px] leading-relaxed text-[color:var(--ff-muted)]">
-                Build trust with refunds, updates, and endorsements—then reward
+                Build trust with refunds, updates, and endorsements then reward
                 contributors with NFT badges.
               </p>
             </div>
