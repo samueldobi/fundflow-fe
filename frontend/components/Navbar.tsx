@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ConnectWalletModal from "@/components/wallet/ConnectWalletModal";
+import ConnectModal from "@/components/wallet/ConnectModal"
 
 const navLinks = [
   { label: "Campaigns", href: "/campaigns" },
@@ -166,6 +167,9 @@ export default function Navbar() {
       {walletOpen ? (
         <ConnectWalletModal onClose={() => setWalletOpen(false)} />
       ) : null}
+      {/* {walletOpen ? (
+        <ConnectModal />
+      ) : null} */}
     </>
   );
 }
